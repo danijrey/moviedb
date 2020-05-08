@@ -17,7 +17,7 @@ class Now extends React.Component {
 
 
     componentDidMount(){
-        axios.get("https://api.themoviedb.org/3/movie/now_playing?api_key=435c541ff77bb63474aeac62867098ad&language=en-US&page=1")
+        axios.get("https://api.themoviedb.org/3/movie/upcoming?api_key=435c541ff77bb63474aeac62867098ad&language=en-US&page=1")
             .then(res => {
                 this.setState({
                     list: res.data
